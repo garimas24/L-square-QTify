@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+// import Logo from './logo.svg';
+// import React,{useEffect, useState} from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+// import StyledEngineProvider from "@mui/material/StyledEngineProvider"
+import { Route } from 'react-router-dom';
+import { Switch } from '@mui/material';
+// import 'index.css'
 
 function App() {
+  // const [data, setData] = useState({})
+  // const {topAlbums = [], newAlbums = [], songs = [] } = data;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <>
+    // <StyledEngineProvider >
+    //   <Navbar />
+    // {/* searchData={[...topAlbums, ...newAlbums]}/> */}
+    //   {/* <Outlet context = {{ data: {topAlbums, newAlbums, songs}}} /> */}
+    // </StyledEngineProvider>
+    // </>
+      <div className= "App">
+      <Switch>
+        <Route exact path="/navbar">
+        <div>Hello from App</div>
+        </Route>
+      </Switch>
+      </div>
+
   );
 }
 

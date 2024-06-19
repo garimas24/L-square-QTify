@@ -1,0 +1,54 @@
+/* Navbar.module.css */
+/* @import '../../styles/variables.css'; */
+
+/* variables.css */
+:root {
+    --primary-color: #121212;
+    --secondary-color: #34C94B;
+    --third-colour: #FFFFF
+    --font-family: 'Poppins', sans-serif;
+  }
+
+.navbar {
+  background-color : green;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; 
+}
+
+.logo {
+  height: 40px; 
+}
+
+.searchContainer {
+  flex-grow: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: white; 
+  border-radius: 5px;
+  padding: 5px 10px; 
+}
+
+.searchIcon {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.searchInput {
+  color: black; 
+  flex: 1;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
