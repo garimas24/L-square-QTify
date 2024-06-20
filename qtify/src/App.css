@@ -32,7 +32,50 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.heroContent {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  width: 473px;
+  height: 48px;
+  top: 171px;
+  left: 369px;
+  gap: 0px;
+  opacity: 0px;
+
+
+}
+
+.heroContent h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+}
+
+.heroImage img {
+  max-width: 212px;
+  height: 212px;
+  top: 103px;
+  left: 915px;
 }

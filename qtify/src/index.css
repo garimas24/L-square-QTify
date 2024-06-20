@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+:root {
+  --background-color: #000000;
+}
+
+/* .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.heroContent {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.heroContent h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+}
+
+.heroImage img {
+  max-width: 100%;
+  height: auto;
+  max-width: 212px;
+  height: 212px;
+  top: 103px;
+  left: 915px;
+} */

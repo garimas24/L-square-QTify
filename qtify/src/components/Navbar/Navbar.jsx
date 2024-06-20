@@ -1,18 +1,16 @@
 import React from 'react';
-import { AppBar, Toolbar, Box, InputBase } from '@mui/material';
+import { Toolbar, Box, InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
  import { Link } from 'react-router-dom';
  import logo from '../../assets/logo.png';    
 import Button from '../Button/Button';
 import styles from './Navbar.module.css';
-import { green } from '@mui/material/colors';
-
 
 const Navbar = () => {
   return (
     // <h1>Hello</h1>
-    <AppBar position="static"  style={{backgroundColor:green}}
-    className={styles.navbar}>
+    // <AppBar position="static"  style={{backgroundColor:green}}
+    < nav className={styles.navbar}>
       <Toolbar>
         <Box className={styles.logoContainer}>
           <Link to="/">
@@ -35,7 +33,7 @@ const Navbar = () => {
           <Button text="Give Feedback" />
         </Box>
       </Toolbar>
-    </AppBar>
+    </nav>
   );
 }
 

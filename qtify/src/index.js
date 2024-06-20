@@ -1,57 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-
 import './index.css';
-import App from './App';
+// import App from './App';
 import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
 
 
 // const router = createBrowserRouter([
 //   {
 //     path:"/",
 //     element: <App />
-    // children: [
-    //   {
-    //     path: "/",
-    //     element: <HomePage />,
-    //   },
-    //   {
-    //     path: "/",
-    //     element: <Album />
-    //   },
-    // ],
+//     children: [
+//       {
+//         path: "/",
+//         element: <HomePage/>
+//       },
+//       {
+//         path: "/"
+//         element: <AlbumPage/>
+//       },
+//     ],
 //   },
-// ]);
+// ])
 
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-
-
-
-// ReactDOM.render(
-//   <BrowserRouter>
-//     <App />
-//   </BrowserRouter>,
-//   document.getElementById('root')
-// );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
-
-
+//  const root = ReactDOM.createRoot(document.getElementById("Id"));
+//  root.render(<RouterProvider router={router}/>);
 
 ReactDOM.render(
   <React.StrictMode>
         <BrowserRouter>
         <Navbar/>
+        <Hero/>
         </BrowserRouter>
   </React.StrictMode>,
    document.getElementById('root')

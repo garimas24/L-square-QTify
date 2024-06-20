@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 // import StyledEngineProvider from "@mui/material/StyledEngineProvider"
 import { Route } from 'react-router-dom';
 import { Switch } from '@mui/material';
+import Hero from './components/Hero/Hero';
 // import 'index.css'
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <div className= "App">
       <Switch>
         <Route exact path="/navbar">
-        <div>Hello from App</div>
+        <Route exact path ="/hero">
+        </Route>
         </Route>
       </Switch>
       </div>
