@@ -1,49 +1,47 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import HomePage from "./pages/HomePages/HomePage";
-import AlbumPage from "./pages/AlbumPage/AlbumPage";
+import HomePage from './pages/HomePages/HomePage';
+import AlbumPage from './pages/AlbumPage/AlbumPage';
+// import Card from './components/Card/Card';
+// import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <HomePage />,
       },
       {
-        path: "/album/:albumId",
+        path: 'album/:albumId',
         element: <AlbumPage />,
       },
     ],
   },
 ]);
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './index.css';
+// import App from './App';
+// // import reportWebVitals from './reportWebVitals';
 
-
-
-//  const root = ReactDOM.createRoot(document.getElementById("Id"));
-//  root.render(<RouterProvider router={router}/>);
-
-// ReactDOM.render(
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
 //   <React.StrictMode>
-//         <BrowserRouter>
-//         <Navbar/>
-//         <Hero/>
-//         <Card/>
-//         </BrowserRouter>
-//   </React.StrictMode>,
-//    document.getElementById('root')
+//     <App />
+//   </React.StrictMode>
 // );
