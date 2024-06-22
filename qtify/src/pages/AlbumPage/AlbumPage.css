@@ -1,0 +1,22 @@
+.albumPage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.albumImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tracklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tracklist li {
+    margin-bottom: 8px;
+}
