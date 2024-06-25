@@ -4,30 +4,27 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import StyledEngineProvider from "@mui/material/StyledEngineProvider";
 import './index.css';
-import { fetchNewAlbums, fetchSongs, fetchTopAlbums } from './api/api';
+import { fetchFilters, fetchNewAlbums, fetchSongs, fetchTopAlbums } from './api/api';
 
 function App() {
   const [data, setData] = useState({});
-  const { topAlbums = [], newAlbums = [], songs = [] } = data;
-
-  const generateData = async (key, source) => {
-    try {
-      const result = await source;
-      setData((prevState) => ({
-        ...prevState,
-        [key]: result,
-      }));
-    } catch (error) {
-      console.error(`Error fetching ${key}:`, error);
-    }
+  
+  const generateData = (key, source) => {
+    source().then((data) => {
+      setData((prevState) => {
+        return { ...prevState, [key]: data };
+      });
+    });
   };
 
   useEffect(() => {
     generateData("topAlbums", fetchTopAlbums());
     generateData("newAlbums", fetchNewAlbums());
     generateData("songs", fetchSongs());
+    generateData("genres", fetchFilters)
   }, []);
 
+      const {topAlbums =[], newAlbums=[], songs = [], genres=[]} = data;
   return (
     <StyledEngineProvider injectFirst>
       <Navbar searchData={[...topAlbums, ...newAlbums]} />

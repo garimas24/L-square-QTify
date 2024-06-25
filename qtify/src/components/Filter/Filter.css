@@ -1,0 +1,23 @@
+.tab {
+    text-transform: none;
+    font-weight: bold;
+    color: #000;
+    opacity: 1;
+}
+
+.tab.Mui-selected {
+    color: #000;
+}
+
+.tab:hover {
+    color: #555;
+    opacity: 0.8;
+}
+
+.tabs {
+    margin-bottom: 16px;
+}
+
+.tabIndicator {
+    background-color: black !important;
+}

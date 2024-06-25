@@ -1,0 +1,33 @@
+/* Carousel.module.css */
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper {
+    padding: 0px 20px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.navigation-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.left-navigation {
+    left: 10px;
+}
+
+.right-navigation {
+    right: 10px;
+}
