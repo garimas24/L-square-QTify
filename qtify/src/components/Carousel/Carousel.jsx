@@ -14,7 +14,7 @@ const Controls = ({ data }) => {
 
   useEffect(() => {
     swiper.slideTo(0);
-  });
+  }, [data]);
 
   return <></>;
 };
